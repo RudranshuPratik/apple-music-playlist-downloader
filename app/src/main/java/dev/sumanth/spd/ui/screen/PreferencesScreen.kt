@@ -126,7 +126,7 @@ fun PreferencesScreen(viewModel: PreferencesScreenViewModel = viewModel()) {
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = "Original Project on GitHub",
+                        text = "Source Code on GitHub",
                         style = MaterialTheme.typography.bodyLarge,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.primary

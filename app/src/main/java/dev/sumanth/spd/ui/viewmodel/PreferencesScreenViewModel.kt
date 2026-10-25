@@ -18,7 +18,7 @@ class PreferencesScreenViewModel(application: Application) : AndroidViewModel(ap
     var downloadPath by mutableStateOf(sharedPref.getDownloadPath() ?: "No folder selected")
     var createSubfolder by mutableStateOf(sharedPref.getCreateSubfolder())
 
-    private val githubUrl = "https://github.com/supersu-man/spotify-playlist-downloader"
+    private val githubUrl = "https://github.com/RudranshuPratik/apple-music-playlist-downloader"
     val packageInfo = application.packageManager.getPackageInfo(application.packageName, 0)
 
     fun openGitHub(uriHandler: UriHandler) {
