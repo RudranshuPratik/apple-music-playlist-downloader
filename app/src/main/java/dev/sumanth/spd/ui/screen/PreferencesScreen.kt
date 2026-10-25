@@ -114,14 +114,19 @@ fun PreferencesScreen(viewModel: PreferencesScreenViewModel = viewModel()) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Icon(Icons.Default.Info, contentDescription = "Developer", modifier = Modifier.size(20.dp))
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("Developed by Sumanth", style = MaterialTheme.typography.bodyLarge)
+                    Text("Modified by Rudranshu Pratik", style = MaterialTheme.typography.bodyLarge)
                 }
+                Text(
+                    text = "Based on Spotify Playlist Downloader by Sumanth Perambuduri (MIT License)",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
                 Row(
                     modifier = Modifier.clickable { viewModel.openGitHub(uriHandler) },
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = "Source Code on GitHub",
+                        text = "Original Project on GitHub",
                         style = MaterialTheme.typography.bodyLarge,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.primary

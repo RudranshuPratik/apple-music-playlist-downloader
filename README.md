@@ -86,3 +86,10 @@ To execute the unit tests against live Apple Music playlists:
 The scraper and parser have been tested and verified on:
 - **Today’s Hits**: `https://music.apple.com/us/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb` (50 tracks)
 - **Top 100: USA**: `https://music.apple.com/us/playlist/top-100-usa/pl.606afcbb70264d2eb2b51d8dbcfa6a12` (100 tracks)
+
+---
+
+## 👤 Credits
+
+- **Modified by:** Rudranshu Pratik (Apple Music adaptation)
+- **Original project:** [Spotify Playlist Downloader](https://github.com/supersu-man/spotify-playlist-downloader) by Sumanth Perambuduri, MIT License
