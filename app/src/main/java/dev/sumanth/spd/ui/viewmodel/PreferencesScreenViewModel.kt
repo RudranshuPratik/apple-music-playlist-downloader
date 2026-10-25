@@ -16,7 +16,6 @@ import java.io.File
 class PreferencesScreenViewModel(application: Application) : AndroidViewModel(application) {
     val sharedPref = SharedPref(application)
     var downloadPath by mutableStateOf(sharedPref.getDownloadPath() ?: "No folder selected")
-    var autoUpdateCheck by mutableStateOf(sharedPref.getAutoUpdateCheck())
     var createSubfolder by mutableStateOf(sharedPref.getCreateSubfolder())
 
     private val githubUrl = "https://github.com/supersu-man/spotify-playlist-downloader"

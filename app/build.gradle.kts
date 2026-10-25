@@ -50,7 +50,6 @@ dependencies {
 
     implementation("com.squareup.okhttp3:okhttp:5.5.0")
     implementation("com.github.teamnewpipe:NewPipeExtractor:v0.26.5")
-    implementation("com.github.supersu-man:apkupdater-library:v2.2.0")
     implementation("com.arthenica:smart-exception-java:0.2.1")
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
 

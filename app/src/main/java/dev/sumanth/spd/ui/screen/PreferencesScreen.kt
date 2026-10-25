@@ -105,26 +105,6 @@ fun PreferencesScreen(viewModel: PreferencesScreenViewModel = viewModel()) {
             }
         }
 
-        Text("Updates", style = MaterialTheme.typography.titleMedium)
-        Card(modifier = Modifier.fillMaxWidth()) {
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 16.dp, vertical = 8.dp),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.SpaceBetween
-            ) {
-                Text("Auto-check for updates", style = MaterialTheme.typography.bodyLarge)
-                Switch(
-                    checked = viewModel.autoUpdateCheck,
-                    onCheckedChange = {
-                        viewModel.autoUpdateCheck = it
-                        viewModel.sharedPref.storeAutoUpdateCheck(it)
-                    }
-                )
-            }
-        }
-
         Text("About", style = MaterialTheme.typography.titleMedium)
         Card(modifier = Modifier.fillMaxWidth()) {
             Column(

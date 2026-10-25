@@ -29,13 +29,10 @@ import dev.sumanth.spd.model.NavigationItem
 import dev.sumanth.spd.ui.component.Background
 import dev.sumanth.spd.ui.component.BottomBar
 import dev.sumanth.spd.ui.component.TopBar
-import dev.sumanth.spd.ui.component.UpdateDialog
 import dev.sumanth.spd.ui.screen.HomeScreen
 import dev.sumanth.spd.ui.screen.PreferencesScreen
 import dev.sumanth.spd.ui.viewmodel.HomeScreenViewModel
-import dev.sumanth.spd.ui.viewmodel.UpdaterViewModel
 import dev.sumanth.spd.utils.NewPipeDownloader
-import dev.sumanth.spd.utils.SharedPref
 import org.schabi.newpipe.extractor.NewPipe
 
 class MainActivity : ComponentActivity() {
@@ -45,7 +42,6 @@ class MainActivity : ComponentActivity() {
         NavigationItem("Preferences", Icons.Filled.Settings, Icons.Outlined.Settings)
     )
 
-    private val updateViewModel: UpdaterViewModel by viewModels()
     private val homeScreenViewModel: HomeScreenViewModel by viewModels()
 
     private val requestPermissionLauncher = registerForActivityResult(
@@ -64,11 +60,6 @@ class MainActivity : ComponentActivity() {
             ) {
                 requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
             }
-        }
-
-        val sharedPref = SharedPref(this)
-        if (sharedPref.getAutoUpdateCheck()) {
-            updateViewModel.checkForUpdate(this)
         }
 
         NewPipe.init(NewPipeDownloader.getInstance())
@@ -98,8 +89,6 @@ class MainActivity : ComponentActivity() {
                             1 -> PreferencesScreen()
                         }
                     }
-
-                    UpdateDialog(updateViewModel)
                 }
             }
         }
