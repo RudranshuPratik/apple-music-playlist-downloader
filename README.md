@@ -4,6 +4,20 @@
   <strong>An Android application that scrapes Apple Music playlists, matches high-quality audio streams, tags full ID3 metadata with 1200x1200 album artwork, and saves them directly to device storage.</strong>
 </p>
 
+<p align="center">
+  <a href="https://github.com/RudranshuPratik/apple-music-playlist-downloader/releases/latest">
+    <img src="https://img.shields.io/github/v/release/RudranshuPratik/apple-music-playlist-downloader?style=for-the-badge&label=Download%20APK&color=FA243C" alt="Download Latest APK">
+  </a>
+</p>
+
+---
+
+## 📥 Download & Install APK
+
+You can download the ready-to-install APK directly from the [**GitHub Releases**](https://github.com/RudranshuPratik/apple-music-playlist-downloader/releases/tag/v1.0.0) page:
+
+- **[⬇️ Download `AppleMusicPlaylistDownloader-v1.0.0.apk`](https://github.com/RudranshuPratik/apple-music-playlist-downloader/releases/download/v1.0.0/AppleMusicPlaylistDownloader-v1.0.0.apk)**
+
 ---
 
 ## 🔒 Technical Note on Apple Music Audio & DRM
